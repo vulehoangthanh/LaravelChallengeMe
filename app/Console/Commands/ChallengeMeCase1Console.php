@@ -53,5 +53,6 @@ class ChallengeMeCase1Console extends Command
         $endTime = microtime(true);
 
         $this->info("Seconds : " .number_format($endTime - $startTime));
+        $this->info("Tong So SP Khong Co Trong Kho  : " . DB::table('case_1_product_notin_warehouse')->count());
     }
 }
