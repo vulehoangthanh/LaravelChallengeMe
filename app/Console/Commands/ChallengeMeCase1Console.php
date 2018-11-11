@@ -45,6 +45,7 @@ class ChallengeMeCase1Console extends Command
         //Import Ma SP vao Table case_1_product_notin_warehouse.
 
         DB::table("case_1_product_notin_warehouse")->truncate();
+        ini_set('memory_limit', '128MB');
         $startTime = microtime(true);
 
         //Start
