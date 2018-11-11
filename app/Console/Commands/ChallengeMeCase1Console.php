@@ -40,8 +40,11 @@ class ChallengeMeCase1Console extends Command
     {
         //Table : case_1_products
         //Table : case_1_product_in_warehouse
+        //Table : case_1_product_notin_warehouse : Chua Cac Ma SP Ko Nam Trong Kho
         //Target : Tìm Mã SP `case_1_products` không nằm trong kho `case_1_product_in_warehouse`
-        //Xuất ra danh sách các Mã SP đó ra file .
+        //Import Ma SP vao Table case_1_product_notin_warehouse.
+
+        DB::table("case_1_product_notin_warehouse")->truncate();
         $startTime = microtime(true);
         //Code Xu ly O Day
         //End Code Xu Ly
