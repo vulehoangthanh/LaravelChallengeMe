@@ -21,6 +21,11 @@ class SchemaChallengeMe1 extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('product_id');
         });
+
+        Schema::create("case_1_product_notin_warehouse", function (Blueprint $table) {
+            $table->bigInteger('id');
+            $table->unique('id');
+        });
     }
 
     /**
