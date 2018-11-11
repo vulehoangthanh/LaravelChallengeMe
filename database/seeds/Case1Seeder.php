@@ -30,7 +30,7 @@ class Case1Seeder extends Seeder
 
         $batch = [];
         for($i = 50000; $i <= 80000; $i++ ) {
-            $batch[] = ["product_id" => $p];
+            $batch[] = ["product_id" => $i];
             if(count($batch) == 500)
             {
                 DB::table("case_1_product_in_warehouse")->insert($batch);
