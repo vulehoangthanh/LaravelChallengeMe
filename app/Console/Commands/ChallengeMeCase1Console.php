@@ -46,9 +46,12 @@ class ChallengeMeCase1Console extends Command
 
         DB::table("case_1_product_notin_warehouse")->truncate();
         $startTime = microtime(true);
-        //Code Xu ly O Day
-        //End Code Xu Ly
+
+        //Start
+        //End
+
         $endTime = microtime(true);
+
         $this->info("Seconds : " .number_format($endTime - $startTime));
     }
 }
